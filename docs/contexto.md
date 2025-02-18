@@ -1,27 +1,27 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Com o avanço da tecnologia nas empresas, a demanda por profissionais qualificados na área de Tecnologia da Informação (TI) está em constante crescimento. No entanto, muitos jovens que estão ingressando no mercado de trabalho encontram dificuldades para adquirir as habilidades necessárias. O ensino tradicional de programação pode ser desafiador para iniciantes, tornando essencial a adoção de abordagens inovadoras que facilitem o aprendizado. Nesse contexto, a gamificação se apresenta como uma estratégia eficaz para tornar o ensino mais dinâmico e interativo.
+
+Este projeto propõe o desenvolvimento de uma plataforma EAD gamificada voltada para jovens que estão iniciando sua jornada profissional, oferecendo curadoria de cursos gratuitos de programação já disponíveis online. A plataforma não apenas orientará os alunos em sua trajetória de aprendizado, mas também promoverá a interação entre os participantes, criando um ambiente colaborativo.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Apesar da alta demanda por profissionais na área de TI, muitos jovens enfrentam barreiras para ingressar nesse setor. Entre os principais desafios estão a dificuldade em encontrar materiais organizados e acessíveis, a falta de orientação sobre quais conteúdos estudar e a ausência de estímulos para manter a constância no aprendizado.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Embora existam diversos cursos gratuitos disponíveis na internet, muitos estudantes não sabem por onde começar ou encontram dificuldades para identificar os melhores recursos para seu nível de conhecimento. Além disso, o aprendizado individual pode ser solitário e desmotivador sem um ambiente de apoio e interação. A falta de curadoria e de um senso de comunidade pode levar à frustração e à desistência antes mesmo de desenvolverem habilidades essenciais para o mercado de trabalho.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo geral
+Desenvolver uma plataforma EAD gamificada para jovens ingressantes no mercado de TI, oferecendo um caminho estruturado para o aprendizado de programação por meio da curadoria de cursos gratuitos já disponíveis online e da criação de uma comunidade ativa de apoio e colaboração.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+- Criar um ambiente de aprendizado interativo utilizando elementos de gamificação, como desafios, pontuações e recompensas;
+- Selecionar, organizar e recomendar cursos gratuitos já existentes;
+- Implementar ferramentas de acompanhamento de desempenho e feedback para auxiliar no aprendizado dos usuários;
+- Integrar elementos de colaboração e competição para incentivar a prática e o engajamento contínuo dos alunos.
+
 
 ## Justificativa
 
