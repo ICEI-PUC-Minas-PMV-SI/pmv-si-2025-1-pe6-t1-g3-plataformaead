@@ -36,10 +36,12 @@ Portanto, os objetivos específicos da plataforma foram cuidadosamente seleciona
 A abordagem proposta não só atende a uma necessidade imediata de qualificação de jovens para o mercado de TI, mas também busca criar um modelo de ensino mais acessível e eficaz, que possa ser ampliado e replicado em outros contextos. A plataforma tem o potencial de transformar a forma como o aprendizado de programação é abordado, tornando-o mais acessível, interativo e estimulante, o que pode impactar positivamente a inserção desses jovens no mercado de trabalho e contribuir para o desenvolvimento do setor de TI como um todo.
 
 ## Público-Alvo
-![image](https://github.com/user-attachments/assets/b07b15aa-1556-416e-96cd-eb84e80e7894)
 
-
-![User Persona Planning Whiteboard](https://github.com/user-attachments/assets/53099bd4-e4d6-4a47-8817-0efaf21d72b5)
+![image](https://github.com/user-attachments/assets/0ec02444-20bb-48ac-85a2-51a4aa3bd3f4)
+![image](https://github.com/user-attachments/assets/b88c6d16-e699-4385-aa44-b657175b373b)
+![image](https://github.com/user-attachments/assets/84974ec2-451e-45c3-be7d-d4ee108faa44)
+![image](https://github.com/user-attachments/assets/e8b43da8-df6f-4e6c-841f-7239cdbcfa51)
+![image](https://github.com/user-attachments/assets/c4c2c93d-7edf-4d9a-bd14-d3df5f18aa99)
 
 
 # Especificações do Projeto
