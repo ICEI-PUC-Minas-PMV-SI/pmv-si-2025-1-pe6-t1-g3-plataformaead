@@ -36,17 +36,11 @@ Portanto, os objetivos específicos da plataforma foram cuidadosamente seleciona
 A abordagem proposta não só atende a uma necessidade imediata de qualificação de jovens para o mercado de TI, mas também busca criar um modelo de ensino mais acessível e eficaz, que possa ser ampliado e replicado em outros contextos. A plataforma tem o potencial de transformar a forma como o aprendizado de programação é abordado, tornando-o mais acessível, interativo e estimulante, o que pode impactar positivamente a inserção desses jovens no mercado de trabalho e contribuir para o desenvolvimento do setor de TI como um todo.
 
 ## Público-Alvo
+![image](https://github.com/user-attachments/assets/b07b15aa-1556-416e-96cd-eb84e80e7894)
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+![User Persona Planning Whiteboard](https://github.com/user-attachments/assets/53099bd4-e4d6-4a47-8817-0efaf21d72b5)
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 # Especificações do Projeto
 
