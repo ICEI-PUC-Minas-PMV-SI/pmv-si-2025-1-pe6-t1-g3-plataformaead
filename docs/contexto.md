@@ -1,49 +1,48 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Com o avanço da tecnologia nas empresas, a demanda por profissionais qualificados na área de Tecnologia da Informação (TI) está em constante crescimento. No entanto, muitos jovens que estão ingressando no mercado de trabalho encontram dificuldades para adquirir as habilidades necessárias. O ensino tradicional de programação pode ser desafiador para iniciantes, tornando essencial a adoção de abordagens inovadoras que facilitem o aprendizado. Nesse contexto, a gamificação se apresenta como uma estratégia eficaz para tornar o ensino mais dinâmico e interativo.
+
+Este projeto propõe o desenvolvimento de uma plataforma EAD gamificada voltada para jovens que estão iniciando sua jornada profissional, oferecendo curadoria de cursos gratuitos de programação já disponíveis online. A plataforma não apenas orientará os alunos em sua trajetória de aprendizado, mas também promoverá a interação entre os participantes, criando um ambiente colaborativo.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Apesar da alta demanda por profissionais na área de TI, muitos jovens enfrentam barreiras para ingressar nesse setor. Entre os principais desafios estão a dificuldade em encontrar materiais organizados e acessíveis, a falta de orientação sobre quais conteúdos estudar e a ausência de estímulos para manter a constância no aprendizado.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Embora existam diversos cursos gratuitos disponíveis na internet, muitos estudantes não sabem por onde começar ou encontram dificuldades para identificar os melhores recursos para seu nível de conhecimento. Além disso, o aprendizado individual pode ser solitário e desmotivador sem um ambiente de apoio e interação. A falta de curadoria e de um senso de comunidade pode levar à frustração e à desistência antes mesmo de desenvolverem habilidades essenciais para o mercado de trabalho.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo geral
+Desenvolver uma plataforma EAD gamificada para jovens ingressantes no mercado de TI, oferecendo um caminho estruturado para o aprendizado de programação por meio da curadoria de cursos gratuitos já disponíveis online e da criação de uma comunidade ativa de apoio e colaboração.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+- Criar um ambiente de aprendizado interativo utilizando elementos de gamificação, como desafios, pontuações e recompensas;
+- Selecionar, organizar e recomendar cursos gratuitos já existentes;
+- Implementar ferramentas de acompanhamento de desempenho e feedback para auxiliar no aprendizado dos usuários;
+- Integrar elementos de colaboração e competição para incentivar a prática e o engajamento contínuo dos alunos.
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A crescente demanda por profissionais qualificados na área de Tecnologia da Informação (TI) é um reflexo da transformação digital que as empresas enfrentam atualmente. Essa revolução tecnológica tem gerado inúmeras oportunidades de emprego, porém, muitas vezes os jovens que ingressam nesse setor encontram dificuldades para adquirir as habilidades essenciais necessárias. A ausência de uma formação estruturada, aliada à grande quantidade de materiais dispersos e sem curadoria, acaba por criar barreiras significativas para o aprendizado eficaz de programação. Além disso, a falta de um ambiente interativo e motivador pode contribuir para a desmotivação, dificultando a manutenção do ritmo de estudo e, consequentemente, o sucesso no processo de aprendizagem.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A escolha de desenvolver uma plataforma EAD gamificada se justifica pela necessidade de tornar o ensino de programação mais acessível, engajador e eficaz, principalmente para os iniciantes. A gamificação, quando aplicada de forma estratégica, é capaz de transformar a experiência de aprendizado, tornando-a mais divertida e estimulante, o que facilita a absorção de conteúdo e a continuidade do aprendizado. O uso de elementos como desafios, pontuações, recompensas e a criação de uma comunidade ativa, contribui diretamente para o aumento do engajamento dos alunos, tornando o processo mais interativo e colaborativo.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O desenvolvimento dessa plataforma se baseia em um estudo prévio das dificuldades enfrentadas pelos estudantes, como a falta de orientação na escolha dos cursos e materiais adequados, a desorganização de recursos online e o isolamento no processo de aprendizado. Por meio de entrevistas e questionários com jovens em busca de qualificação na área de TI, observou-se que muitos sentem-se perdidos em meio à imensidão de conteúdos disponíveis e desmotivados pela ausência de um ambiente de apoio. As respostas coletadas indicaram que uma plataforma que ofereça uma curadoria de cursos gratuitos e organize os materiais de forma estruturada pode, de fato, facilitar a jornada de aprendizado. Além disso, a criação de um ambiente colaborativo que incentive a troca de experiências e conhecimentos pode ser determinante para aumentar o engajamento e o sucesso desses alunos.
+
+Portanto, os objetivos específicos da plataforma foram cuidadosamente selecionados para atender a essas necessidades. A criação de um ambiente interativo com elementos de gamificação, como desafios e recompensas, visa proporcionar uma experiência motivadora e envolvente. A curadoria de cursos gratuitos e a recomendação personalizada de materiais, além de garantir a qualidade do conteúdo, facilita a escolha do caminho de aprendizado mais adequado ao nível de conhecimento de cada aluno. A implementação de ferramentas de acompanhamento de desempenho e feedback não só auxilia na melhoria contínua, mas também permite que os alunos se sintam acompanhados em sua jornada. Por fim, ao integrar elementos de colaboração e competição, a plataforma fomenta a interação entre os usuários, criando um ambiente dinâmico e coletivo que reforça o engajamento e a perseverança dos alunos.
+
+A abordagem proposta não só atende a uma necessidade imediata de qualificação de jovens para o mercado de TI, mas também busca criar um modelo de ensino mais acessível e eficaz, que possa ser ampliado e replicado em outros contextos. A plataforma tem o potencial de transformar a forma como o aprendizado de programação é abordado, tornando-o mais acessível, interativo e estimulante, o que pode impactar positivamente a inserção desses jovens no mercado de trabalho e contribuir para o desenvolvimento do setor de TI como um todo.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+![image](https://github.com/user-attachments/assets/0ec02444-20bb-48ac-85a2-51a4aa3bd3f4)
+![image](https://github.com/user-attachments/assets/b88c6d16-e699-4385-aa44-b657175b373b)
+![image](https://github.com/user-attachments/assets/84974ec2-451e-45c3-be7d-d4ee108faa44)
+![image](https://github.com/user-attachments/assets/e8b43da8-df6f-4e6c-841f-7239cdbcfa51)
+![image](https://github.com/user-attachments/assets/c4c2c93d-7edf-4d9a-bd14-d3df5f18aa99)
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 # Especificações do Projeto
 
