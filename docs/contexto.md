@@ -55,8 +55,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Cadastro de usuário   | ALTA | 
+|RF-002| Alteração de cadastro de usuário   | ALTA |
+|RF-003| Permitir que o usuário consiga fazer login em sua conta   | ALTA |
+|RF-004| ASistema que faz o acompanhamento do avanço que o usuário tem com as aulas   | ALTA |
+|RF-005| Acompanhamento diário do usuário   | ALTA |
+|RF-006| Alertas diários para o usuário alertando sobre a falta do estudo no dia   | ALTA |
+|RF-007| Opção alterar ao momento que quiser a opção de receber alertas via e-mail   | ALTA |
+|RF-008| Capacidade de hospedar vídeos direto do YouTube   | ALTA |
+|RF-009| AGerar relatório mensal do usuário sobre os estudos   | MÉDIA |
+|RF-010| Possibilidade do usuário editar o perfil   | BAIXA |
+|RF-011| Possibilidade de criar grupos de estudo   | BAIXA |
+|RF-012| Criação de fóruns para os usuários   | BAIXA |
 
 ### Requisitos não Funcionais
 
