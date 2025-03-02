@@ -65,6 +65,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-003| A plataforma deve ter tempo de resposta inferior a 2 segundos para 90% das requisições. | ALTA
+|RNF-004| O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Safari) e dispositivos (mobile, desktop). | ALTA
+|RNF-005| Dados dos usuários (como senhas e informações pessoais) devem ser criptografados (ex: AES-256) e armazenados conforme a LGPD. | ALTA
+|RNF-006| O design deve ser intuitivo, com onboarding guiado para novos usuários e feedback visual imediato em ações gamificadas. | MÉDIA
+|RNF-007| O sistema deve incluir backups automáticos diários e plano de recuperação de desastres. | MÉDIA
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -104,18 +109,18 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+![image](https://github.com/user-attachments/assets/b2cd05c5-9441-4906-a707-4d718fa1ca75)
 
 
 ## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
+- Java para a API principal
+- Go para os microsserviços
+- Postgres como banco de dados
+- Keycloak para autenticação
+  
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Hospedagem em EC2 e orquestração do ambiente com docker-compose
 
 > **Links Úteis**:
 >
