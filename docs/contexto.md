@@ -54,11 +54,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Aluno responsável
 |------|-----------------------------------------|----| ---- |
-|RF-001| Sistema de gestão do usuário  | ALTA | |
-|RF-002| Gestão de notificação por e-mail   | ALTA | |
-|RF-003| Gestão de conteúdo   | ALTA | |
-|RF-004| Gestão de gamificação (ranking, pontuação)  | ALTA | |
-|RF-005| Criação de fóruns para os usuários   | BAIXA | |
+|RF-001| Sistema de gestão do usuário  | ALTA | KAUAN e CARLOS |
+|RF-002| Gestão de notificação  | ALTA | KAUAN |
+|RF-003| Gestão de gamificação (ranking, pontuação)  | ALTA | MARIA |
+|RF-004| Gestão de conteúdo  | ALTA | CARLOS |
+|RF-005| Sistema de gestão de fórum  | BAIXA | MARCUS |
+|RF-006| Criação de fóruns para os usuários   | BAIXA | MARCOS |
 
 ### Requisitos não Funcionais
 
