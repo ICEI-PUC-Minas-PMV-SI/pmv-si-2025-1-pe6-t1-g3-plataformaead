@@ -52,12 +52,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Sistema de gestão do usuário  | ALTA | 
-|RF-002| Gestão de notificação por e-mail   | ALTA |
-|RF-003| Gestão de aulas   | ALTA |
-|RF-004| Criação de fóruns para os usuários   | BAIXA |
+|ID    | Descrição do Requisito  | Prioridade | Aluno responsável
+|------|-----------------------------------------|----| ---- |
+|RF-001| Sistema de gestão do usuário  | ALTA | |
+|RF-002| Gestão de notificação por e-mail   | ALTA | |
+|RF-003| Gestão de conteúdo   | ALTA | |
+|RF-004| Gestão de gamificação (ranking, pontuação)  | ALTA | |
+|RF-005| Criação de fóruns para os usuários   | BAIXA | |
 
 ### Requisitos não Funcionais
 
@@ -93,13 +94,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| O projeto não deve ter custo financeiro       |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
 
@@ -122,9 +118,3 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 Hospedagem em EC2 e orquestração do ambiente com docker-compose
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
