@@ -102,5 +102,9 @@ Definição de como o software é estruturado em termos dos componentes que faze
   
 ## Hospedagem
 
-Hospedagem em EC2 e orquestração do ambiente com docker-compose
+Hospedagem em EC2 e orquestração do ambiente com docker-compose.
+
+EC2
+
+A escolha pelo Amazon Elastic Compute Cloud (EC2) como solução de hospedagem foi motivada por suas características que se alinham às necessidades da aplicação desenvolvida. O EC2 oferece flexibilidade na configuração de recursos computacionais, permitindo ajustar memória, armazenamento e capacidade de processamento conforme a demanda do software. Além disso, a infraestrutura da Amazon Web Services (AWS) proporciona alta segurança e confiabilidade, garantindo conformidade com a Lei Geral de Proteção de Dados (LGPD). Outro fator determinante para essa escolha foi a disponibilidade do Free Tier, um plano gratuito que viabiliza a experimentação e implementação do serviço sem custos iniciais, atendendo às restrições orçamentárias do projeto.
 
