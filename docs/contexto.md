@@ -87,8 +87,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 # Catálogo de Serviços
 
 ## Curadoria de Cursos Gratuitos
-
-###Descrição:
+### Descrição:
 A plataforma realizará a seleção, organização e recomendação de cursos gratuitos disponíveis na internet, oferecendo um percurso estruturado de aprendizado conforme o nível de conhecimento do usuário.
 
 ### Funcionalidades:
@@ -96,6 +95,24 @@ A plataforma realizará a seleção, organização e recomendação de cursos gr
 - Sugestões personalizadas de trilhas de aprendizado com base no progresso do usuário.
 - Avaliação contínua dos cursos disponibilizados para garantir qualidade e atualização do conteúdo.
 - Integração com plataformas externas (ex: YouTube, Coursera, Udemy Free, FreeCodeCamp).
+
+## Gamificação do Aprendizado
+### Descrição:
+Elementos de gamificação serão utilizados para tornar o aprendizado mais envolvente e motivador, incentivando a progressão contínua dos alunos.
+
+### Funcionalidades:
+- Sistema de pontos e conquistas conforme a realização de atividades e desafios.
+- Desafios diários e semanais para reforçar o aprendizado.
+- Recompensas virtuais e rankings para estimular a competitividade saudável.
+
+## Comunidade de Apoio e Colaboração
+### Descrição:
+A plataforma promoverá um ambiente colaborativo, onde os alunos poderão interagir, compartilhar dúvidas e trocar experiências, criando uma rede de apoio no aprendizado.
+
+### Funcionalidades:
+- Fóruns para discussão e resolução de dúvidas.
+- Grupos de estudos organizados por interesse e nível de aprendizado.
+- Feed interativo com desafios e postagens para engajamento da comunidade.
 
 
 # Arquitetura da Solução
