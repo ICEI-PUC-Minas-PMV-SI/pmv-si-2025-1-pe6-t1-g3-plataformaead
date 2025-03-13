@@ -109,3 +109,8 @@ EC2
 
 A escolha pelo Amazon Elastic Compute Cloud (EC2) como solução de hospedagem foi motivada por suas características que se alinham às necessidades da aplicação desenvolvida. O EC2 oferece flexibilidade na configuração de recursos computacionais, permitindo ajustar memória, armazenamento e capacidade de processamento conforme a demanda do software. Além disso, a infraestrutura da Amazon Web Services (AWS) proporciona alta segurança e confiabilidade, garantindo conformidade com a Lei Geral de Proteção de Dados (LGPD). Outro fator determinante para essa escolha foi a disponibilidade do Free Tier, um plano gratuito que viabiliza a experimentação e implementação do serviço sem custos iniciais, atendendo às restrições orçamentárias do projeto.
 
+Docker-compose
+
+A escolha pelo Docker Compose como ferramenta de orquestração foi motivada por sua capacidade de gerenciar múltiplos contêineres de forma simplificada e eficiente. O Docker Compose permite a definição e execução de aplicações multicontêiner por meio de um único arquivo de configuração, facilitando a implantação e manutenção do ambiente.
+Além disso, o uso de contêineres garante portabilidade, escalabilidade e isolamento dos serviços, proporcionando um ambiente de desenvolvimento e produção mais consistente. A adoção dessa tecnologia reduz problemas de compatibilidade entre diferentes sistemas e simplifica a replicação da infraestrutura em diferentes máquinas e dispositivos.
+
