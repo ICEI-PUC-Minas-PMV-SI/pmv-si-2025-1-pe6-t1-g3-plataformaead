@@ -86,7 +86,15 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+## Curadoria de Cursos Gratuitos
+###Descrição:
+A plataforma realizará a seleção, organização e recomendação de cursos gratuitos disponíveis na internet, oferecendo um percurso estruturado de aprendizado conforme o nível de conhecimento do usuário.
+###Funcionalidades:
+-Classificação dos cursos por nível de dificuldade (iniciante, intermediário, avançado).
+-Sugestões personalizadas de trilhas de aprendizado com base no progresso do usuário.
+-Avaliação contínua dos cursos disponibilizados para garantir qualidade e atualização do conteúdo.
+-Integração com plataformas externas (ex: YouTube, Coursera, Udemy Free, FreeCodeCamp).
+
 
 # Arquitetura da Solução
 
