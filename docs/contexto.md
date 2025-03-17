@@ -119,7 +119,7 @@ A plataforma promoverá um ambiente colaborativo, onde os alunos poderão intera
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![image](https://github.com/user-attachments/assets/b2cd05c5-9441-4906-a707-4d718fa1ca75)
+![image](./img/modelagemEixo6-Arquitetura.drawio.png)
 
 
 ## Tecnologias Utilizadas
