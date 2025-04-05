@@ -28,32 +28,355 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
+### BadgeService
 
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
+#### **POST /badges** - Criar badge
+> Cria um novo badge.
+
+**Request Body**
+```json
+{
+  "name": "test",
+  "imgUrl": "test"
+}
+```
+
+**Responses**
+- `201 Created`: Badge criado com sucesso.
+
+---
+
+#### **GET /badges** - Listar badges
+> Retorna todos os badges disponíveis.
+
+**Responses**
+- `200 OK`: Lista de badges.
+
+---
+
+#### **GET /badges/{id}** - Buscar badge por ID
+> Retorna um badge específico.
+
+**Path Parameters**
+- `id`: ID do badge (ex: `2`)
+
+**Responses**
+- `200 OK`: Badge encontrado.
+- `404 Not Found`: Badge não encontrado.
+
+---
+
+#### **PUT /badges/{id}** - Atualizar badge
+> Atualiza um badge existente.
+
+**Request Body**
+```json
+{
+  "name": "Química",
+  "imgUrl": "/images/badges/flask.png"
+}
+```
+
+**Responses**
+- `200 OK`: Badge atualizado.
+- `404 Not Found`: Badge não encontrado.
+
+---
+
+#### **DELETE /badges/{id}** - Remover badge
+> Remove um badge.
+
+**Responses**
+- `204 No Content`: Badge removido.
+- `404 Not Found`: Badge não encontrado.
+
+---
+
+### StudentPointsService
+
+#### **GET /points** - Ranking de pontos
+> Lista todos os estudantes ordenados por pontos.
+
+**Responses**
+- `200 OK`: Lista de ranking de pontos.
+
+---
+
+#### **GET /points/{id}** - Pontos de um estudante
+> Retorna os pontos de um estudante específico.
+
+**Responses**
+- `200 OK`: Dados do estudante.
+- `404 Not Found`: Estudante não encontrado.
+
+---
+
+#### **PUT /points/{id}** - Atualizar pontos
+> Atualiza os pontos de um estudante.
+
+**Request Body**
+```json
+{
+  "points": "200"
+}
+```
+
+**Responses**
+- `200 OK`: Pontos atualizados.
+- `404 Not Found`: Estudante não encontrado.
+
+---
+
+#### **DELETE /points/{id}** - Limpar pontos
+> Zera os pontos de um estudante.
+
+**Responses**
+- `204 No Content`: Pontos resetados.
+- `404 Not Found`: Estudante não encontrado.
+
+---
+
+### StudentBadgeService
+
+#### **POST /studentBadge** - Atribuir badge ao estudante
+> Atribui um badge a um estudante.
+
+**Query Params**
+- `studentId`: ID do estudante
+- `badgeId`: ID do badge
+
+**Responses**
+- `201 Created`: Badge atribuído.
+- `404 Not Found`: Estudante ou badge não encontrado.
+
+---
+
+#### **GET /studentBadge** - Listar badges de um estudante
+> Retorna todos os badges de um estudante.
+
+**Query Params**
+- `studentId`: ID do estudante
+
+**Responses**
+- `200 OK`: Lista de badges.
+
+---
+
+#### **DELETE /studentBadge** - Remover badge do estudante
+> Remove um badge atribuído a um estudante.
+
+**Query Params**
+- `studentId`: ID do estudante
+- `badgeId`: ID do badge
+
+**Responses**
+- `204 No Content`: Remoção concluída.
+
+---
+
+### LessonService
+
+#### **GET /lessons** - Listar aulas
+> Retorna todas as aulas.
+
+**Responses**
+- `200 OK`: Lista de aulas.
+
+---
+
+#### **POST /lessons** - Criar aula
+> Cria uma nova aula.
+
+**Request Body**
+```json
+{
+  "name": "teste 1",
+  "description": "teste",
+  "videoUrl": "teste"
+}
+```
+
+**Responses**
+- `201 Created`: Aula criada.
+
+---
+
+#### **GET /lessons/{id}** - Buscar aula por ID
+> Retorna uma aula específica.
+
+**Responses**
+- `200 OK`: Aula encontrada.
+- `404 Not Found`: Aula não encontrada.
+
+---
+
+#### **PUT /lessons/{id}** - Atualizar aula
+> Atualiza dados de uma aula.
+
+**Request Body**
+```json
+{
+  "name": "teste put",
+  "description": "put",
+  "videoUrl": "put"
+}
+```
+
+**Responses**
+- `200 OK`: Aula atualizada.
+- `404 Not Found`: Aula não encontrada.
+
+---
+
+#### **DELETE /lessons/{id}** - Remover aula
+> Remove uma aula específica.
+
+**Responses**
+- `204 No Content`: Aula removida.
+- `404 Not Found`: Aula não encontrada.
+
+---
+
+## LessonService
+
+### `GET /lessons`
+> Lista todas as aulas.
+
+---
+
+### `POST /lessons`
+> Cria uma nova aula.
+
+**Request Body:**
+```json
+{
+  "name": "teste 1",
+  "description": "teste",
+  "videoUrl": "teste"
+}
+```
+
+---
+
+### `GET /lessons/{id}`
+> Retorna dados da aula a partir do ID.
+
+---
+
+### `PUT /lessons/{id}`
+> Atualiza a aula a partir do ID.
+
+**Request Body:**
+```json
+{
+  "name": "teste put",
+  "description": "put",
+  "videoUrl": "put"
+}
+```
+
+---
+
+### `DELETE /lessons/{id}`
+> Remove a aula a partir do ID
+
+---
+
+## CourseService
+
+### `GET /courses`
+> Lista todos os cursos.
+
+**Responses**
+- `200 OK`: Lista de cursos.
+
+---
+
+### `DELETE /courses?courseId={courseId}&lessonId={lessonId}`
+> Remove uma aula de um curso.
+
+**Responses**
+- `204 No Content`: Curso atualizado.
+- `404 Not Found`: Aula não encontrada.
+- `404 Not Found`: Curso não encontrado.
+
+---
+
+### `DELETE /courses/{id}`
+> Exclui o curso a partir do ID.
+
+**Responses**
+- `204 No Content`: Curso removido.
+- `404 Not Found`: Curso não encontrado.
+
+---
+
+### `PUT /courses?courseId={courseId}&lessonId={lessonId}`
+> Adiciona uma aula a um curso.
+
+**Responses**
+- `204 No Content`: Curso atualizado.
+- `404 Not Found`: Aula não encontrada.
+- `404 Not Found`: Curso não encontrado.
+
+---
+
+### `GET /courses/{id}`
+> Retorna dados do curso a partir do ID.
+
+**Response Body**
+```json
+{
+    "id": 10,
+    "name": "teste",
+    "description": "teste",
+    "coverImgUrl": "teste",
+    "lessons": [
+            {
+        "id": 1,
+        "name": "teste 1",
+        "description": "teste",
+        "videoUrl": "teste"
       }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-    ```
+    ]
+}
+```
+---
+
+### `POST /courses/`
+> Cria um novo curso.
+
+**Request Body:**
+```json
+{
+  "name": "teste",
+  "description": "teste",
+  "coverImgUrl": "teste",
+  "lessons": []
+}
+```
+**Responses**
+- `200 OK`: Curso criado.
+
+
+---
+
+### `PUT /courses/{id}`
+> Atualiza o curso a partir do ID.
+
+**Request Body:**
+```json
+{
+  "name": "teste",
+  "description": "teste",
+  "coverImgUrl": "teste",
+  "lessons": []
+}
+```
+**Responses**
+- `200 OK`: Curso atualizado.
+- `404 Not Found`: Curso não encontrada.
+
 
 ## Considerações de Segurança
 
