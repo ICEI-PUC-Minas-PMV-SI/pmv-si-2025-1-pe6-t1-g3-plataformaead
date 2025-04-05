@@ -394,13 +394,190 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+## BadgeService
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+### Criar badge
+- **Método:** POST `/badges`
+- **Caso de teste 1:** Criar badge com dados válidos
+  - Entrada: `{ "name": "Badge Teste", "imgUrl": "https://img.com/badge.png" }`
+  - Esperado: 201 Created, body com badge criado
+
+- **Caso de teste 2:** Criar badge com dados ausentes
+  - Entrada: `{ "name": "", "imgUrl": "" }`
+  - Esperado: 400 Bad Request
+
+---
+
+### Buscar todos os badges
+- **Método:** GET `/badges`
+- **Caso de teste 1:** Buscar com badges cadastrados
+  - Esperado: 200 OK, lista de badges
+
+- **Caso de teste 2:** Buscar sem nenhum badge cadastrado
+  - Esperado: 200 OK, lista vazia
+
+---
+
+### Buscar badge por ID
+- **Método:** GET `/badges/{id}`
+- **Caso de teste 1:** ID existente
+  - Entrada: `/badges/1`
+  - Esperado: 200 OK, badge correspondente
+
+- **Caso de teste 2:** ID inexistente
+  - Entrada: `/badges/999`
+  - Esperado: 404 Not Found
+
+---
+
+### Atualizar badge
+- **Método:** PUT `/badges/{id}`
+- **Caso de teste 1:** Atualizar badge com dados válidos
+  - Entrada: `{ "name": "Novo Nome", "imgUrl": "/img/nova.png" }`
+  - Esperado: 200 OK, badge atualizado
+
+- **Caso de teste 2:** Atualizar badge inexistente
+  - Esperado: 404 Not Found
+
+---
+
+### Deletar badge
+- **Método:** DELETE `/badges/{id}`
+- **Caso de teste 1:** Badge existente
+  - Entrada: `/badges/1`
+  - Esperado: 204 No Content
+
+- **Caso de teste 2:** Badge inexistente
+  - Entrada: `/badges/999`
+  - Esperado: 404 Not Found
+
+---
+
+## StudentPointsService
+
+### Ranking de pontos
+- **Método:** GET `/points`
+- **Caso de teste 1:** Retornar ranking com dados
+  - Esperado: 200 OK, lista ordenada de estudantes
+
+---
+
+### Buscar pontos por ID
+- **Método:** GET `/points/{id}`
+- **Caso de teste 1:** Estudante existente
+  - Entrada: `/points/1`
+  - Esperado: 200 OK
+
+- **Caso de teste 2:** Estudante inexistente
+  - Entrada: `/points/999`
+  - Esperado: 404 Not Found
+
+---
+
+### Atualizar pontos
+- **Método:** PUT `/points/{id}`
+- **Caso de teste 1:** Atualização válida
+  - Entrada: `{ "points": "200" }`
+  - Esperado: 200 OK, pontos atualizados
+
+---
+
+### Zerar pontos
+- **Método:** DELETE `/points/{id}`
+- **Caso de teste 1:** Estudante existente
+  - Esperado: 204 No Content
+
+---
+
+## StudentBadgeService
+
+### Atribuir badge ao estudante
+- **Método:** POST `/studentBadge?studentId=2&badgeId=1`
+- **Caso de teste 1:** Badge e estudante válidos
+  - Esperado: 201 Created
+
+---
+
+### Buscar badges de um estudante
+- **Método:** GET `/studentBadge?studentId=2`
+- **Caso de teste 1:** Estudante com badges
+  - Esperado: 200 OK
+
+---
+
+### Remover badge de estudante
+- **Método:** DELETE `/studentBadge?studentId=2&badgeId=1`
+- **Caso de teste 1:** Badge atribuído
+  - Esperado: 204 No Content
+
+---
+
+## LessonService
+
+### Criar aula
+- **Método:** POST `/lessons`
+- **Caso de teste 1:** Aula válida
+  - Entrada: `{ "name": "Aula X", "description": "Conteúdo", "videoUrl": "link" }`
+  - Esperado: 201 Created
+
+---
+
+### Buscar aulas
+- **Método:** GET `/lessons`
+- **Esperado:** 200 OK
+
+---
+
+### Atualizar aula
+- **Método:** PUT `/lessons/{id}`
+- **Caso de teste:** Atualização válida
+  - Esperado: 200 OK
+
+---
+
+### Remover aula
+- **Método:** DELETE `/lessons/{id}`
+- **Esperado:** 204 No Content
+
+---
+
+## CourseService
+
+### Criar curso
+- **Método:** POST `/courses`
+- **Entrada válida**
+  - Esperado: 201 Created
+
+---
+
+### Buscar cursos
+- **Método:** GET `/courses`
+- **Esperado:** 200 OK
+
+---
+
+### Adicionar aula ao curso
+- **Método:** PUT `/courses?courseId=1&lessonId=1`
+- **Esperado:** 200 OK
+
+---
+
+### Remover aula do curso
+- **Método:** DELETE `/courses?courseId=1&lessonId=1`
+- **Esperado:** 204 No Content
+
+---
+
+### Atualizar curso
+- **Método:** PUT `/courses/{id}`
+- **Esperado:** 200 OK
+
+---
+
+### Remover curso
+- **Método:** DELETE `/courses/{id}`
+- **Esperado:** 204 No Content
+
 
 # Referências
 
