@@ -578,6 +578,119 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 - **Método:** DELETE `/courses/{id}`
 - **Esperado:** 204 No Content
 
+### API Cadastro de usuário 
+
+## Este projeto demonstra o uso da **Identity com Minimal API** no ASP.NET Core para gerenciamento de usuários, autenticação e autorização.
+
+
+
+## Tecnologias Utilizadas
+
+- ASP.NET Core 7/8 (Minimal API)
+- Identity API Endpoints
+- Entity Framework Core
+- SQL Server
+- Swagger
+- CORS
+
+---
+
+## Endpoints Disponíveis
+
+### Endpoints Padrão da Identity
+
+Utilizando `app.MapIdentityApi<User>()`, os seguintes endpoints são registrados automaticamente:
+
+| Método | Rota                  | Descrição                                 |
+|--------|-----------------------|-------------------------------------------|
+| POST   | `/register`           | Registra um novo usuário                  |
+| POST   | `/login`              | Realiza login (gera cookie ou token)      |
+| POST   | `/logout`             | Realiza logout                            |
+| POST   | `/confirm-email`      | Confirma e-mail do usuário                |
+| POST   | `/forgot-password`    | Envia link para redefinir senha           |
+| POST   | `/reset-password`     | Redefine senha com token                  |
+| POST   | `/change-password`    | Altera senha estando autenticado          |
+| GET    | `/me`                 | Retorna informações do usuário logado     |
+
+> ℹEsses endpoints são protegidos ou públicos conforme a configuração padrão da Identity.
+
+---
+
+### 📄 GET `/user`
+
+```csharp
+app.MapGet("/user", (ClaimsPrincipal user) => user.Identity!.Name)
+    .RequireAuthorization();
+Descrição: Retorna o nome do usuário autenticado.
+
+Autenticação: Sim
+
+Resposta:
+
+"usuario@email.com"
+
+🔓 POST /logout
+csharp
+Copiar
+Editar
+app.MapPost("/logout",
+    async (SignInManager<User> signInManager, [FromBody] object empty) =>
+    {
+        await signInManager.SignOutAsync();
+        return Results.Ok();
+    });
+Descrição: Faz o logout do usuário.
+
+Autenticação: Sim
+
+Corpo da requisição:
+
+
+{}
+Resposta: 200 OK
+
+👥 GET /MyUser
+csharp
+Copiar
+Editar
+app.MapGet("/MyUser", async (UserManager<User> userManager) =>
+{
+    var users = await userManager.Users.ToListAsync();
+    var userDTOs = users.Select(u => new UserDTO { Email = u.Email }).ToList();
+    return Results.Ok(userDTOs);
+});
+Descrição: Retorna a lista de usuários cadastrados (somente e-mails).
+
+Autenticação: ❌ Não (público)
+
+Resposta:
+
+[
+  { "email": "exemplo1@email.com" },
+  { "email": "exemplo2@email.com" }
+]
+
+
+Configurações
+Banco de Dados
+O projeto utiliza SQL Server. A string de conexão está definida assim:
+
+
+"Server=localhost,1433;Database=identity-db;User Id=sa;Password=Pedro_1987;Trusted_Connection=false;TrustServerCertificate=true;"
+
+
+
+CORS
+As requisições de qualquer origem são permitidas:
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
 
 # Referências
 
