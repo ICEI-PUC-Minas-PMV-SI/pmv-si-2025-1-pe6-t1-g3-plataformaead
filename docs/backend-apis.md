@@ -1,16 +1,9 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
+As APIs do projeto Edutech visam prover o gerenciamento das principais entidades do sistema, com autenticação de usuários e autorização com segregação de funções por roles. As entidades gerenciadas são: Badge, StudentPoints, StudentBadge, Lesson, Course, Enrollment, LessonProgress e serviços de criação e autenticação de usuários.
 
 ## Objetivos da API
-
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
-
-[Inclua os objetivos da sua api.]
+O Objetivo da API é prover o backend do sistema de maneira segura, escalável e desacoplada.
 
 
 ## Modelagem da Aplicação
@@ -22,9 +15,7 @@ Diagrama de Entidade Relacionamento com domínios dos serviços
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
-
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+ As APIs foram desenvolvidas com o framework Spring Boot baseado em Java, banco de dados PostgreSQL, autenticação e autorização gerenciadas pelo Keycloak e infraestrutura provida pelo Docker. Os testes das API foram feitos através do software Postman.
 
 ## API Endpoints
 
