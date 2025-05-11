@@ -19,6 +19,9 @@ Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal admin
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
 ## Tecnologias Utilizadas
+- HTML
+- CSS
+- JavaScript
 - Vue.js
 
 ## Considerações de Segurança
