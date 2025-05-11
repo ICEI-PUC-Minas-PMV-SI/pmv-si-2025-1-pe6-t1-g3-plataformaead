@@ -22,354 +22,222 @@ Diagrama de Entidade Relacionamento com domínios dos serviços
 
 ## API Endpoints
 
-### BadgeService
+## 🏅 BadgeService
 
-#### **POST /badges** - Criar badge
-> Cria um novo badge.
+### 🔸 Create a Badge
+- **Endpoint:** `POST /badges`
+- **Auth:** Bearer Token - ADMIN
+- **Body (JSON):**
+  ```json
+  {
+    "name": "test",
+    "imgUrl": "test"
+  }
+  ```
 
-**Request Body**
-```json
-{
-  "name": "test",
-  "imgUrl": "test"
-}
-```
+### 🔸 Get All Badges
+- **Endpoint:** `GET /badges`
+- **Auth:** -
 
-**Responses**
-- `201 Created`: Badge criado com sucesso.
+### 🔸 Get Badge by ID
+- **Endpoint:** `GET /badges/{id}`
+- **Auth:** -
 
----
+### 🔸 Update a Badge
+- **Endpoint:** `PUT /badges/{id}`
+- **Auth:** Bearer Token - ADMIN
+- **Body (JSON):**
+  ```json
+  {
+    "name": "Química",
+    "imgUrl": "/images/badges/flask.png"
+  }
+  ```
 
-#### **GET /badges** - Listar badges
-> Retorna todos os badges disponíveis.
-
-**Responses**
-- `200 OK`: Lista de badges.
-
----
-
-#### **GET /badges/{id}** - Buscar badge por ID
-> Retorna um badge específico.
-
-**Path Parameters**
-- `id`: ID do badge (ex: `2`)
-
-**Responses**
-- `200 OK`: Badge encontrado.
-- `404 Not Found`: Badge não encontrado.
-
----
-
-#### **PUT /badges/{id}** - Atualizar badge
-> Atualiza um badge existente.
-
-**Request Body**
-```json
-{
-  "name": "Química",
-  "imgUrl": "/images/badges/flask.png"
-}
-```
-
-**Responses**
-- `200 OK`: Badge atualizado.
-- `404 Not Found`: Badge não encontrado.
+### 🔸 Delete a Badge
+- **Endpoint:** `DELETE /badges/{id}`
+- **Auth:** Bearer Token - ADMIN
 
 ---
 
-#### **DELETE /badges/{id}** - Remover badge
-> Remove um badge.
+## 🎯 StudentPointsService
 
-**Responses**
-- `204 No Content`: Badge removido.
-- `404 Not Found`: Badge não encontrado.
+### 🔸 Get Points Ranking
+- **Endpoint:** `GET /points/ranking`
+- **Auth:** -
 
----
+### 🔸 Get Student Points (Authenticated Student)
+- **Endpoint:** `GET /points`
+- **Auth:** Bearer Token - STUDENT
 
-### StudentPointsService
+### 🔸 Update Student Points
+- **Endpoint:** `PUT /points`
+- **Auth:** Bearer Token - STUDENT
+- **Body (JSON):**
+  ```json
+  {
+    "points": "100"
+  }
+  ```
 
-#### **GET /points** - Ranking de pontos
-> Lista todos os estudantes ordenados por pontos.
-
-**Responses**
-- `200 OK`: Lista de ranking de pontos.
-
----
-
-#### **GET /points/{id}** - Pontos de um estudante
-> Retorna os pontos de um estudante específico.
-
-**Responses**
-- `200 OK`: Dados do estudante.
-- `404 Not Found`: Estudante não encontrado.
+### 🔸 Clear Student Points by Email
+- **Endpoint:** `DELETE /points/{studentEmail}`
+- **Auth:** Bearer Token - ADMIN
 
 ---
 
-#### **PUT /points/{id}** - Atualizar pontos
-> Atualiza os pontos de um estudante.
+## 🧑‍🎓 StudentBadgeService
 
-**Request Body**
-```json
-{
-  "points": "200"
-}
-```
+### 🔸 Assign Badge to Student
+- **Endpoint:** `POST /studentBadge?badgeId={id}`
+- **Auth:** Bearer Token - STUDENT
 
-**Responses**
-- `200 OK`: Pontos atualizados.
-- `404 Not Found`: Estudante não encontrado.
+### 🔸 Get All Badges Assigned to Student
+- **Endpoint:** `GET /studentBadge`
+- **Auth:** Bearer Token - STUDENT
 
----
-
-#### **DELETE /points/{id}** - Limpar pontos
-> Zera os pontos de um estudante.
-
-**Responses**
-- `204 No Content`: Pontos resetados.
-- `404 Not Found`: Estudante não encontrado.
+### 🔸 Remove Badge from Student
+- **Endpoint:** `DELETE /studentBadge?studentId={id}&badgeId={id}`
+- **Auth:** Bearer Token - ADMIN
 
 ---
 
-### StudentBadgeService
+## 📚 LessonService
 
-#### **POST /studentBadge** - Atribuir badge ao estudante
-> Atribui um badge a um estudante.
+### 🔸 Get All Lessons
+- **Endpoint:** `GET /lessons`
+- **Auth:** -
 
-**Query Params**
-- `studentId`: ID do estudante
-- `badgeId`: ID do badge
+### 🔸 Create Lesson
+- **Endpoint:** `POST /lessons`
+- **Auth:** -
+- **Body (JSON):**
+  ```json
+  {
+    "name": "teste 2",
+    "description": "teste",
+    "videoUrl": "teste"
+  }
+  ```
 
-**Responses**
-- `201 Created`: Badge atribuído.
-- `404 Not Found`: Estudante ou badge não encontrado.
+### 🔸 Get Lesson by ID
+- **Endpoint:** `GET /lessons/{id}`
+- **Auth:** -
 
----
+### 🔸 Update Lesson
+- **Endpoint:** `PUT /lessons/{id}`
+- **Auth:** Bearer Token - ADMIN
+- **Body (JSON):**
+  ```json
+  {
+    "name": "teste put",
+    "description": "put",
+    "videoUrl": "put"
+  }
+  ```
 
-#### **GET /studentBadge** - Listar badges de um estudante
-> Retorna todos os badges de um estudante.
-
-**Query Params**
-- `studentId`: ID do estudante
-
-**Responses**
-- `200 OK`: Lista de badges.
-
----
-
-#### **DELETE /studentBadge** - Remover badge do estudante
-> Remove um badge atribuído a um estudante.
-
-**Query Params**
-- `studentId`: ID do estudante
-- `badgeId`: ID do badge
-
-**Responses**
-- `204 No Content`: Remoção concluída.
-
----
-
-### LessonService
-
-#### **GET /lessons** - Listar aulas
-> Retorna todas as aulas.
-
-**Responses**
-- `200 OK`: Lista de aulas.
+### 🔸 Delete Lesson
+- **Endpoint:** `DELETE /lessons/{id}`
+- **Auth:** Bearer Token - ADMIN
 
 ---
 
-#### **POST /lessons** - Criar aula
-> Cria uma nova aula.
+## 🏫 CourseService
 
-**Request Body**
-```json
-{
-  "name": "teste 1",
-  "description": "teste",
-  "videoUrl": "teste"
-}
-```
+### 🔸 Get All Courses
+- **Endpoint:** `GET /courses`
+- **Auth:** -
 
-**Responses**
-- `201 Created`: Aula criada.
+### 🔸 Get Course by ID
+- **Endpoint:** `GET /courses/{id}`
+- **Auth:** -
 
----
-
-#### **GET /lessons/{id}** - Buscar aula por ID
-> Retorna uma aula específica.
-
-**Responses**
-- `200 OK`: Aula encontrada.
-- `404 Not Found`: Aula não encontrada.
-
----
-
-#### **PUT /lessons/{id}** - Atualizar aula
-> Atualiza dados de uma aula.
-
-**Request Body**
-```json
-{
-  "name": "teste put",
-  "description": "put",
-  "videoUrl": "put"
-}
-```
-
-**Responses**
-- `200 OK`: Aula atualizada.
-- `404 Not Found`: Aula não encontrada.
-
----
-
-#### **DELETE /lessons/{id}** - Remover aula
-> Remove uma aula específica.
-
-**Responses**
-- `204 No Content`: Aula removida.
-- `404 Not Found`: Aula não encontrada.
-
----
-
-## LessonService
-
-### `GET /lessons`
-> Lista todas as aulas.
-
----
-
-### `POST /lessons`
-> Cria uma nova aula.
-
-**Request Body:**
-```json
-{
-  "name": "teste 1",
-  "description": "teste",
-  "videoUrl": "teste"
-}
-```
-
----
-
-### `GET /lessons/{id}`
-> Retorna dados da aula a partir do ID.
-
----
-
-### `PUT /lessons/{id}`
-> Atualiza a aula a partir do ID.
-
-**Request Body:**
-```json
-{
-  "name": "teste put",
-  "description": "put",
-  "videoUrl": "put"
-}
-```
-
----
-
-### `DELETE /lessons/{id}`
-> Remove a aula a partir do ID
-
----
-
-## CourseService
-
-### `GET /courses`
-> Lista todos os cursos.
-
-**Responses**
-- `200 OK`: Lista de cursos.
-
----
-
-### `DELETE /courses?courseId={courseId}&lessonId={lessonId}`
-> Remove uma aula de um curso.
-
-**Responses**
-- `204 No Content`: Curso atualizado.
-- `404 Not Found`: Aula não encontrada.
-- `404 Not Found`: Curso não encontrado.
-
----
-
-### `DELETE /courses/{id}`
-> Exclui o curso a partir do ID.
-
-**Responses**
-- `204 No Content`: Curso removido.
-- `404 Not Found`: Curso não encontrado.
-
----
-
-### `PUT /courses?courseId={courseId}&lessonId={lessonId}`
-> Adiciona uma aula a um curso.
-
-**Responses**
-- `204 No Content`: Curso atualizado.
-- `404 Not Found`: Aula não encontrada.
-- `404 Not Found`: Curso não encontrado.
-
----
-
-### `GET /courses/{id}`
-> Retorna dados do curso a partir do ID.
-
-**Response Body**
-```json
-{
-    "id": 10,
+### 🔸 Create Course
+- **Endpoint:** `POST /courses`
+- **Auth:** Bearer Token - ADMIN
+- **Body (JSON):**
+  ```json
+  {
     "name": "teste",
     "description": "teste",
     "coverImgUrl": "teste",
-    "lessons": [
-            {
-        "id": 1,
-        "name": "teste 1",
-        "description": "teste",
-        "videoUrl": "teste"
-      }
-    ]
-}
-```
----
+    "lessons": []
+  }
+  ```
 
-### `POST /courses/`
-> Cria um novo curso.
+### 🔸 Update Course Info
+- **Endpoint:** `PUT /courses/{id}`
+- **Auth:** Bearer Token - ADMIN
 
-**Request Body:**
-```json
-{
-  "name": "teste",
-  "description": "teste",
-  "coverImgUrl": "teste",
-  "lessons": []
-}
-```
-**Responses**
-- `200 OK`: Curso criado.
+### 🔸 Delete Course
+- **Endpoint:** `DELETE /courses/{id}`
+- **Auth:** Bearer Token - ADMIN
 
+### 🔸 Add Lesson to Course
+- **Endpoint:** `PUT /courses?courseId={id}&lessonId={id}`
+- **Auth:** Bearer Token - ADMIN
+
+### 🔸 Remove Lesson from Course
+- **Endpoint:** `DELETE /courses?courseId={id}&lessonId={id}`
+- **Auth:** Bearer Token - ADMIN
 
 ---
 
-### `PUT /courses/{id}`
-> Atualiza o curso a partir do ID.
+## 🧭 LessonProgressService
 
-**Request Body:**
-```json
-{
-  "name": "teste",
-  "description": "teste",
-  "coverImgUrl": "teste",
-  "lessons": []
-}
-```
-**Responses**
-- `200 OK`: Curso atualizado.
-- `404 Not Found`: Curso não encontrada.
+### 🔸 Mark Lesson as Watched
+- **Endpoint:** `POST /lessonProgress`
+- **Auth:** Bearer Token - STUDENT
+
+---
+
+### 🔸 Get Lesson Progress
+- **Endpoint:** `GET /lessonProgress`
+- **Auth:** Bearer Token - STUDENT
+
+---
+
+## 📝 EnrollmentService
+
+### 🔸 Enroll Student in Course
+- **Endpoint:** `POST /enrollment?courseId={id}`
+- **Auth:** Bearer Token - STUDENT
+
+---
+
+### 🔸 Get All Enrollments
+- **Endpoint:** `GET /enrollment`
+- **Auth:** Bearer Token - STUDENT
+
+---
+
+## 🔐 Auth
+
+### 🔸 Login
+- **Endpoint:** `POST /login/`
+- **Auth:** -
+- **Body (JSON):**
+  ```json
+  {
+    "username": "teste_user",
+    "password": "teste"
+  }
+  ```
+
+---
+
+### 🔸 Create User
+- **Endpoint:** `POST /users/`
+- **Auth:** -
+- **Body (JSON):**
+  ```json
+  {
+    "username": "aluna",
+    "password": "teste",
+    "email": "teste3@teste2"
+  }
+  ```
+
 
 
 ## Considerações de Segurança
@@ -609,120 +477,3 @@ API cria apenas usuários estudantes. Para dar permissão admin:
 - **Método:** DELETE `/courses/{id}`
 - **Esperado:** 204 No Content
 
-### API Cadastro de usuário 
-
-## Este projeto demonstra o uso da **Identity com Minimal API** no ASP.NET Core para gerenciamento de usuários, autenticação e autorização.
-
-
-
-## Tecnologias Utilizadas
-
-- ASP.NET Core 7/8 (Minimal API)
-- Identity API Endpoints
-- Entity Framework Core
-- SQL Server
-- Swagger
-- CORS
-
----
-
-## Endpoints Disponíveis
-
-### Endpoints Padrão da Identity
-
-Utilizando `app.MapIdentityApi<User>()`, os seguintes endpoints são registrados automaticamente:
-
-| Método | Rota                  | Descrição                                 |
-|--------|-----------------------|-------------------------------------------|
-| POST   | `/register`           | Registra um novo usuário                  |
-| POST   | `/login`              | Realiza login (gera cookie ou token)      |
-| POST   | `/logout`             | Realiza logout                            |
-| POST   | `/confirm-email`      | Confirma e-mail do usuário                |
-| POST   | `/forgot-password`    | Envia link para redefinir senha           |
-| POST   | `/reset-password`     | Redefine senha com token                  |
-| POST   | `/change-password`    | Altera senha estando autenticado          |
-| GET    | `/me`                 | Retorna informações do usuário logado     |
-
-> ℹEsses endpoints são protegidos ou públicos conforme a configuração padrão da Identity.
-
----
-
-### 📄 GET `/user`
-
-```csharp
-app.MapGet("/user", (ClaimsPrincipal user) => user.Identity!.Name)
-    .RequireAuthorization();
-Descrição: Retorna o nome do usuário autenticado.
-
-Autenticação: Sim
-
-Resposta:
-
-"usuario@email.com"
-
-🔓 POST /logout
-csharp
-Copiar
-Editar
-app.MapPost("/logout",
-    async (SignInManager<User> signInManager, [FromBody] object empty) =>
-    {
-        await signInManager.SignOutAsync();
-        return Results.Ok();
-    });
-Descrição: Faz o logout do usuário.
-
-Autenticação: Sim
-
-Corpo da requisição:
-
-
-{}
-Resposta: 200 OK
-
-👥 GET /MyUser
-csharp
-Copiar
-Editar
-app.MapGet("/MyUser", async (UserManager<User> userManager) =>
-{
-    var users = await userManager.Users.ToListAsync();
-    var userDTOs = users.Select(u => new UserDTO { Email = u.Email }).ToList();
-    return Results.Ok(userDTOs);
-});
-Descrição: Retorna a lista de usuários cadastrados (somente e-mails).
-
-Autenticação: ❌ Não (público)
-
-Resposta:
-
-[
-  { "email": "exemplo1@email.com" },
-  { "email": "exemplo2@email.com" }
-]
-
-
-Configurações
-Banco de Dados
-O projeto utiliza SQL Server. A string de conexão está definida assim:
-
-
-"Server=localhost,1433;Database=identity-db;User Id=sa;Password=Pedro_1987;Trusted_Connection=false;TrustServerCertificate=true;"
-
-
-
-CORS
-As requisições de qualquer origem são permitidas:
-
-
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
-    });
-});
-
-# Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
