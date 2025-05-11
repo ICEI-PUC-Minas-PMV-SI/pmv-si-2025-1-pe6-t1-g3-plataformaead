@@ -26,7 +26,11 @@ Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal admin
 
 ## Considerações de Segurança
 
-As regras de segurança para o front-end são baseadas na autenticação e autorização implementadas na etapa de desenvolvimento de APIs. Nesta etapa, as APIs foram integradas com o front-end com configurações de CORS - Cross-Origin Resource Sharing.
+A autenticação dos usuários é realizada por meio do login com e-mail e senha, onde o Keycloak atua como provedor de identidade, emitindo um token de acesso (JWT) após a validação das credenciais. Esse token é então utilizado pelo front-end para acessar recursos protegidos nas APIs, garantindo que apenas usuários autenticados e devidamente autorizados tenham permissão para consumir os dados ou realizar ações específicas.
+
+Além disso, foram aplicadas configurações de CORS (Cross-Origin Resource Sharing) nas APIs, permitindo que o front-end se comunique com os serviços de backend de forma segura, mesmo estando hospedado em domínios distintos.
+
+Essas medidas em conjunto asseguram uma comunicação segura entre o front-end e o backend, protegendo tanto os dados dos usuários quanto a integridade da aplicação como um todo.
 
 ## Testes
 Testes de integração realizados com a identidade visual ainda incompleta.
