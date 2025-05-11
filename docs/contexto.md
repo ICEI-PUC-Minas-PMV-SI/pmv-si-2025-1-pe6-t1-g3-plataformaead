@@ -105,28 +105,20 @@ Elementos de gamificação serão utilizados para tornar o aprendizado mais envo
 - Desafios diários e semanais para reforçar o aprendizado.
 - Recompensas virtuais e rankings para estimular a competitividade saudável.
 
-## Comunidade de Apoio e Colaboração
-### Descrição:
-A plataforma promoverá um ambiente colaborativo, onde os alunos poderão interagir, compartilhar dúvidas e trocar experiências, criando uma rede de apoio no aprendizado.
-
-### Funcionalidades:
-- Fóruns para discussão e resolução de dúvidas.
-- Grupos de estudos organizados por interesse e nível de aprendizado.
-- Feed interativo com desafios e postagens para engajamento da comunidade.
 
 
 # Arquitetura da Solução
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![image](./img/modelagemEixo6-Arquitetura.drawio.png)
+![image](./img/modelagemEixo6-arquitetura_v2.png)
 
 
 ## Tecnologias Utilizadas
-- Java para a API principal
-- Go para os microsserviços
+- Java/Spring Boot para as APIs
 - Postgres como banco de dados
 - Keycloak para autenticação
+- Docker como infraestrutura de deploy
   
 ## Hospedagem
 
