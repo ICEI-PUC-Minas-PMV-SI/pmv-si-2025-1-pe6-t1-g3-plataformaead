@@ -1,6 +1,6 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal administrativo, integrando as APIs que demandam privilégios administrativos e gerenciam o conteúdo da plataforma: criação, edição e exclusão de cursos e aulas.
 
 ## Projeto da Interface Web
 
@@ -19,32 +19,153 @@
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+- Vue.js
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-
-## Implantação
-
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+As regras de segurança para o front-end são baseadas na autenticação e autorização implementadas na etapa de desenvolvimento de APIs. Nesta etapa, as APIs foram integradas com o front-end com configurações de CORS - Cross-Origin Resource Sharing.
 
 ## Testes
+Testes de integração realizados com a identidade visual ainda incompleta.
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### CT 1 - Login com usuário administrativo - OK
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+**DADO QUE** um usuário possui nome de usuário e senha
 
-# Referências
+**E** privilégios administrativos
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+**QUANDO** ele fizer o login
+
+**ENTÃO** ele será direcionado para a área de gestão de cursos e aulas
+
+![image](./img/testes-front/CT1-01.png)
+![image](./img/testes-front/CT1-02.png)
+![image](./img/testes-front/CT1-03.png)
+
+---
+
+### CT 2 - Listar cursos - OK
+
+**DADO QUE** um usuário está logado
+
+**E** possui privilégios administrativos
+
+**QUANDO** ele acessar a área administrativa
+
+**ENTÃO** ele conseguirá listar todos os cursos cadastrados
+
+![image](./img/testes-front/CT2-01.png)
+!
+
+---
+
+### CT 3 - Excluir curso - OK
+
+**DADO QUE** um usuário está logado
+
+**E** possui privilégios administrativos
+
+**QUANDO** ele clicar no botão exlcuir curso
+
+**E** confirmar
+
+**ENTÃO** o curso será excluído
+
+![image](./img/testes-front/CT3-01.png)
+![image](./img/testes-front/CT3-02.png)
+![image](./img/testes-front/CT3-03.png)
+
+---
+
+### CT 4 - Criar curso - OK
+
+**DADO QUE** um usuário está logado
+
+**E** possui privilégios administrativos
+
+**QUANDO** ele preencher os dados de um novo curso
+
+**E** clicar no botão Salvar Curso
+
+**ENTÃO** o curso será criado
+
+![image](./img/testes-front/CT4-01.png)
+![image](./img/testes-front/CT4-02.png)
+
+---
+
+### CT 5 - Cadastrar aula - OK
+
+**DADO QUE** um usuário está logado
+
+**E** possui privilégios administrativos
+
+**QUANDO** ele clicar para ver as aulas de um curso
+
+**E** preencher os dados de uma nova aula
+
+**ENTÃO** a aula será criada relacionada ao curso selecionado
+
+![image](./img/testes-front/CT5-01.png)
+![image](./img/testes-front/CT5-02.png)
+![image](./img/testes-front/CT5-03.png)
+![image](./img/testes-front/CT5-04.png)
+
+---
+
+### CT 6 - Excluir aula - OK
+
+**DADO QUE** um usuário está logado
+
+**E** possui privilégios administrativos
+
+**QUANDO** ele listar as aulas de um curso
+
+**E** clicar no botão excluir
+
+**E** confirmar
+
+**ENTÃO** a aula será excluída deste curso
+
+![image](./img/testes-front/CT6-01.png)
+![image](./img/testes-front/CT6-02.png)
+![image](./img/testes-front/CT6-03.png)
+
+---
+
+### CT 7 - Editar curso - OK
+
+**DADO QUE** um usuário está logado
+
+**E** possui privilégios administrativos
+
+**QUANDO** ele listar os cursos
+
+**E** clicar no botão editar
+
+**E** preencher novos dados
+
+**E** clicar no botão salvar
+
+**ENTÃO** o curso será atualizado
+
+![image](./img/testes-front/CT7-01.png)
+![image](./img/testes-front/CT7-02.png)
+![image](./img/testes-front/CT7-03.png)
+
+---
+
+### CT 8 - Exibir página Sobre - OK
+
+**DADO QUE** um usuário está acessando o site
+
+**QUANDO** ele clicar no menu Sobre no Header
+
+**ENTÃO** será exibida uma página com dados estáticos
+
+![image](./img/testes-front/CT8-01.png)
+![image](./img/testes-front/CT8-02.png)
+
+
+---
+
