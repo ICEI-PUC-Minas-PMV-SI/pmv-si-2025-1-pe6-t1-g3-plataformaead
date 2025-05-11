@@ -7,15 +7,18 @@ O Objetivo da API é prover o backend do sistema de maneira segura, escalável e
 
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
-![image](./img/modelagemEixo6-EntidadeRelacionamento.drawio.png)
+![image](./img/modelagemEixo6-EntidadeRelacionamento-EntidadeRelacionamento.drawio_v2.png)
 Diagrama de Entidade Relacionamento com domínios dos serviços
+
 
 
 ## Tecnologias Utilizadas
 
  As APIs foram desenvolvidas com o framework Spring Boot baseado em Java, banco de dados PostgreSQL, autenticação e autorização gerenciadas pelo Keycloak e infraestrutura provida pelo Docker. Os testes das API foram feitos através do software Postman.
+
+ ![image](./img/container-docker.png)
+ Container rodando no Docker Desktop
 
 ## API Endpoints
 
@@ -371,17 +374,54 @@ Diagrama de Entidade Relacionamento com domínios dos serviços
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A principal implementação de segurança foi o estabelecimento de rotas autenticadas com diferententes níveis de autorização, constrolados pelas roles STUDENT e ADMIN, gerenciadas na plataforma Keycloak. A implementação é feita a nível de API pelas dependências Spring Boot Security e Spring Boot Oauth2 Resource Server, que implementam a gestão de tokens JWT de maneira transparente. A seguir, alguns prints da implementação do Keycloak no projeto:
+
+![image](./img/KC-realm-client.png)
+Edutech-realm e edutech-client criados no ambiente local
+
+![image](./img/KC-roles.png)
+Roles ADMIN e STUDENT controlam diferentes funcinalidades das APIs
+
+![image](./img/KC-user.png)
+Usuário criado no Keycloak
+
+![image](./img/KC-user-role.png)
+Usuário com role STUDENT
+
+![image](./img/Spring-authorize.png)
+Serviços com diferentes roles para autorização usando annotation @PreAutorize
+
+
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+Para fazer o build da aplicação:
+```
+mvn clean install    
+```
+
+
+Para rodar projeto:
+
+```
+docker-compose up --build -d
+```
+
+API cria apenas usuários estudantes. Para dar permissão admin:
+
+```
+- Com o container rodando, acessar keycloak em http://localhost:8088/
+- clicar em Administration console
+- user admin / senha admin
+- trocar para realm edutech-realm
+- Clicar em Users na barra lateral
+- Escolher um usuário para dar permissão
+- Cliar no usuário, aba Role mapping
+- Botão Assign Role, selecionar role ADMIN e cliar em assign
+- No próximo login, usuário deve ter as permissões para endpoints administrativas
+```
+
 
 ## Testes
 
