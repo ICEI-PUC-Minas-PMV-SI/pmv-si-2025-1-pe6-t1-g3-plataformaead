@@ -4,7 +4,6 @@ Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal admin
 
 ## Projeto da Interface Web
 
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
 ### Wireframes
 
