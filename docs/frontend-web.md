@@ -37,15 +37,17 @@ Cor usada nos textos secundarios do footer e botões ![image](https://github.com
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tipografia
-Usado Segoe UI em todos os titulos e paragragos '<p>' do site.
+Usado Segoe UI em todos os titulos e paragragos do site.
 Oswavld usado nos botões.
 
 ## Ícones
 ![user](https://github.com/user-attachments/assets/bfe23755-bbc4-4386-bdc1-ef33e295cb13) Usado no login.
+
 ![search](https://github.com/user-attachments/assets/e7a6e92f-29d5-4a7c-bced-508bf704322a) Usado pós barra de pesquisa.
 
 ## Logo
-![logoBranca](https://github.com/user-attachments/assets/76952016-14ba-4eeb-a196-5d96f6a27bad) Logo do nosso projeto. Eduteck
+Logo do nosso projeto. Eduteck
+![logoBranca](https://github.com/user-attachments/assets/76952016-14ba-4eeb-a196-5d96f6a27bad) 
 
 
 ## Fluxo de Dados
