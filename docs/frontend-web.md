@@ -23,17 +23,30 @@ Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal admin
 
 ### Design Visual
 
-Cor usada no header e outras divs principais das paginas ![image](https://github.com/user-attachments/assets/a0100900-8038-4ae2-b31a-8eb2c96c8734) #98BFE5
+## Cores usadas
 
-Cor usada nos textos e titulos ![image](https://github.com/user-attachments/assets/91221ea7-f2d0-4495-bbbf-d8357f1c9412) #212529
+Cor usada no header e outras divs principais das paginas ![image](https://github.com/user-attachments/assets/a0100900-8038-4ae2-b31a-8eb2c96c8734) #98BFE5.
 
-Cor usada no footer ![image](https://github.com/user-attachments/assets/d92a45cc-b02f-4d9b-9af6-1f04d22c0e76) #101D42 
+Cor usada nos textos e titulos ![image](https://github.com/user-attachments/assets/91221ea7-f2d0-4495-bbbf-d8357f1c9412) #212529.
 
-Cor usada nos textos do footer ![image](https://github.com/user-attachments/assets/cd42875e-da7a-4b0f-be5a-dd3ed092a2c1) #6F8FB4
+Cor usada no footer ![image](https://github.com/user-attachments/assets/d92a45cc-b02f-4d9b-9af6-1f04d22c0e76) #101D42.
 
-Cor usada nos textos secundarios do footer e botões ![image](https://github.com/user-attachments/assets/d92a45cc-b02f-4d9b-9af6-1f04d22c0e76) #F4D35E
+Cor usada nos textos do footer ![image](https://github.com/user-attachments/assets/cd42875e-da7a-4b0f-be5a-dd3ed092a2c1) #6F8FB4.
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+Cor usada nos textos secundarios do footer e botões ![image](https://github.com/user-attachments/assets/e3d377dd-6d8c-42f8-a39f-0cc88da6a7bc) #F4D35E.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Tipografia
+Usado Segoe UI em todos os titulos e paragragos '<p>' do site.
+Oswavld usado nos botões.
+
+## Ícones
+![user](https://github.com/user-attachments/assets/bfe23755-bbc4-4386-bdc1-ef33e295cb13) Usado no login.
+![search](https://github.com/user-attachments/assets/e7a6e92f-29d5-4a7c-bced-508bf704322a) Usado pós barra de pesquisa.
+
+## Logo
+![logoBranca](https://github.com/user-attachments/assets/76952016-14ba-4eeb-a196-5d96f6a27bad) Logo do nosso projeto. Eduteck
+
 
 ## Fluxo de Dados
 
