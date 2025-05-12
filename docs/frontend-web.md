@@ -51,7 +51,7 @@ Logo do nosso projeto. Eduteck
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+![image](./img/Diagrama.png)
 
 ## Tecnologias Utilizadas
 - HTML
