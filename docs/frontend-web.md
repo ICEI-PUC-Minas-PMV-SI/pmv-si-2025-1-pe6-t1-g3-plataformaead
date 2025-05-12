@@ -8,7 +8,18 @@ Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal admin
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+## Pagina inicial
+![image](https://github.com/user-attachments/assets/27ee77ee-29a9-4d1d-bdfc-a38ee920e36f)
+
+## Pagina Sobre
+![image](https://github.com/user-attachments/assets/253acf7d-2a60-4cb3-a795-5026be34ea3a)
+
+## Pagina gerenciar cursos
+![image](https://github.com/user-attachments/assets/b447fa41-6eaf-47e9-a44f-510bf46476d5)
+
+## Pagina Login
+![image](https://github.com/user-attachments/assets/b362165d-2ba8-4e96-a7b3-60bdf6db4c4a)
+
 
 ### Design Visual
 
