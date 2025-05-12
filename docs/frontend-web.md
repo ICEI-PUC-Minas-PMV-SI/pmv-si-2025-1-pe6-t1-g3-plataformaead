@@ -81,7 +81,9 @@ Testes de integração realizados com a identidade visual ainda incompleta.
 
 **ENTÃO** ele será direcionado para a área de gestão de cursos e aulas
 
-![image](./img/testes-front/CT1-01.png)
+![image](./img/testes-front/teste login 01.png)
+![image](./img/testes-front/teste login 02.png)
+![image](./img/testes-front/teste login 03.png)
 ![image](./img/testes-front/CT1-02.png)
 ![image](./img/testes-front/CT1-03.png)
 
