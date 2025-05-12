@@ -25,6 +25,10 @@ Na etapa do Front-end Web, fechamos o escopo da aplicação para um portal admin
 
 Cor usada no header e outras divs principais das paginas ![image](https://github.com/user-attachments/assets/67cb0ba7-3a4d-4207-bffe-e7e6202c2c00) #98BFE5
 
+Cor usada no footer ![image](https://github.com/user-attachments/assets/d92a45cc-b02f-4d9b-9af6-1f04d22c0e76) #101D42 
+
+Cor usada nos textos e titulos ![image](https://github.com/user-attachments/assets/91221ea7-f2d0-4495-bbbf-d8357f1c9412) #212529
+
 
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
 
