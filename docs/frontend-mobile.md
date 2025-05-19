@@ -1,6 +1,6 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O aplicativo mobile contará com uma página de login, onde o usuário poderá criar uma conta ou acessar uma já existente. Será por meio do aplicativo que ele assistirá às aulas e acompanhará seu progresso, com base na pontuação obtida através dos elementos de gamificação da plataforma.
 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
