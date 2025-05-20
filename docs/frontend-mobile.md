@@ -13,7 +13,7 @@ O aplicativo mobile contará com uma página de login, onde o usuário poderá c
 
 ### Design Visual
 
-#Cores
+# Cores
 
 Cor usada no header e outras divs principais das paginas ![image](https://github.com/user-attachments/assets/a0100900-8038-4ae2-b31a-8eb2c96c8734) #98BFE5.
 
@@ -26,10 +26,12 @@ Cor usada nos textos do footer ![image](https://github.com/user-attachments/asse
 Cor usada nos textos secundarios do footer e botões ![image](https://github.com/user-attachments/assets/e3d377dd-6d8c-42f8-a39f-0cc88da6a7bc) #F4D35E.
 
 
-#Fontes
+# Fontes
 
 Arial usado em todos os texto das telas de login. Wight 700 e 400
+
 OpenSans usado em botões.
+
 Bangers usado na parte da pagina de gameficação.
 
 ## Fluxo de Dados
