@@ -8,6 +8,8 @@ O aplicativo mobile contará com uma página de login, onde o usuário poderá c
 ### Wireframes
 
 ![Tela de login / Criar usuario](img/mobile1.JPG)
+![Cursos e Aulas](img/mobile2.JPG)
+![Gameficação](img/mobile3.JPG)
 
 ### Design Visual
 
