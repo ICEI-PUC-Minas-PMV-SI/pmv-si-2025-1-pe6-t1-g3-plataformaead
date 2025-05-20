@@ -13,7 +13,15 @@ O aplicativo mobile contará com uma página de login, onde o usuário poderá c
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+Cor usada no header e outras divs principais das paginas ![image](https://github.com/user-attachments/assets/a0100900-8038-4ae2-b31a-8eb2c96c8734) #98BFE5.
+
+Cor usada nos textos e titulos ![image](https://github.com/user-attachments/assets/91221ea7-f2d0-4495-bbbf-d8357f1c9412) #212529.
+
+Cor usada no footer ![image](https://github.com/user-attachments/assets/d92a45cc-b02f-4d9b-9af6-1f04d22c0e76) #101D42.
+
+Cor usada nos textos do footer ![image](https://github.com/user-attachments/assets/cd42875e-da7a-4b0f-be5a-dd3ed092a2c1) #6F8FB4.
+
+Cor usada nos textos secundarios do footer e botões ![image](https://github.com/user-attachments/assets/e3d377dd-6d8c-42f8-a39f-0cc88da6a7bc) #F4D35E.
 
 ## Fluxo de Dados
 
