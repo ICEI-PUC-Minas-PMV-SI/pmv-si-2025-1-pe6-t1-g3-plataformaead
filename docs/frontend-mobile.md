@@ -41,7 +41,9 @@ Bangers usado na parte da pagina de gameficação.
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+Expo Dev
+React Native
+AWS
 
 ## Considerações de Segurança
 
@@ -49,23 +51,42 @@ Bangers usado na parte da pagina de gameficação.
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+### Requisitos de Hardware e Software
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+1. Para rodar a aplicação em ambiente de produção, foi necessário:
+* Um celular ou emulador Android/iOS para o app mobile;
+* Backend com suporte a Node.js;
+* Banco de dados relacional;
+* Keycloak rodando em container Docker ou servidor com suporte Java;
+* Armazenamento S3 da AWS para os vídeos dos cursos.
+
+2. Escolha da Plataforma de Hospedagem
+Para a implantação, foram escolhidas as seguintes plataformas:
+* Keycloak;
+* AWS S3 para o armazenamento de vídeos;
+* O app mobile é distribuído via Expo, que permite rodar diretamente em aparelhos físicos;
+
+3. Configuração do Ambiente de Implantação
+Foi necessário configurar variáveis de ambiente no backend, como:
+* URLs do Keycloak;
+* Conexão com o banco de dados;
+* Caminhos de acesso aos vídeos da AWS S3;
+* Além disso, instalamos as dependências com npm install e configuramos o arquivo app.json no projeto Expo para o ambiente de produção.
+
+4. Deploy da Aplicação
+* O Keycloak foi rodado em um container Docker e configurado com os clientes.
+* O app mobile foi publicado utilizando o comando npx expo export, com a possibilidade de depois gerar os arquivos .apk ou .aab para publicação nas lojas.
+
+5. Testes no Ambiente de Produção
+Após o deploy, foram realizados testes de:
+
+* Login e criação de usuários via Keycloak;
+* Visualização de cursos no app mobile;
+* Requisições à API e carregamento de vídeos da AWS;
+* Fluxo completo de cadastro de cursos pela aplicação web e exibição no app.
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
 # Referências
 
