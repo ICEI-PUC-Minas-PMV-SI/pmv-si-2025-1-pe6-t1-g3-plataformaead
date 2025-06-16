@@ -1,9 +1,8 @@
 # Front-end Móvel
 
-O aplicativo mobile contará com uma página de login, onde o usuário poderá criar uma conta ou acessar uma já existente. Será por meio do aplicativo que ele assistirá às aulas e acompanhará seu progresso, com base na pontuação obtida através dos elementos de gamificação da plataforma.
+O aplicativo mobile contará com uma página de login, onde o usuário poderá criar uma conta ou acessar uma já existente. É através do aplicativo também que o usuário poderá se inscrever e ver as aulas.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
 ### Wireframes
 
