@@ -41,9 +41,11 @@ Bangers usado na parte da pagina de gameficação.
 
 ## Tecnologias Utilizadas
 
-Expo Dev
-React Native
-AWS
+Expo Dev;
+
+React Native;
+
+AWS;
 
 ## Considerações de Segurança
 
@@ -87,6 +89,7 @@ Após o deploy, foram realizados testes de:
 
 ## Testes
 
+[Assista ao vídeo](./img/VideoTeste.mp4)
 
 # Referências
 
