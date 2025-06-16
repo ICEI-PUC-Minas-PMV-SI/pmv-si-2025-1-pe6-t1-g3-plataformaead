@@ -35,7 +35,9 @@ Bangers usado na parte da pagina de gameficação.
 
 ## Fluxo de Dados
 
-(img/diagramaMobile.png)
+![image](./img/diagramaMobile.png)
+
+
 
 ## Tecnologias Utilizadas
 
